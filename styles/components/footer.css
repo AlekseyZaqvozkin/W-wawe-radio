@@ -1,0 +1,129 @@
+.footer {
+  background-color: var(--text_gray);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 92px;
+}
+
+.footer__left {
+  max-width: 160px;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.social__svg {
+  fill: var(--grey);
+  transition: fill 0.2s ease-in-out;
+}
+
+
+.social__link:focus .social__svg,
+.social__link:focus-visible .social__svg {
+  fill: var(--primary_light);
+}
+
+.social__link:focus-visible {
+  outline: none;
+}
+
+.social__link:hover .social__svg {
+  fill: var(--primary);
+}
+
+.social__link:active .social__svg {
+  fill: var(--primary_shade);
+}
+
+.social__item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.footer__right {
+  width: 40%;
+}
+
+.footer__nav {
+  max-height: 88px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 20px;
+  column-gap: 107px;
+}
+
+.social__svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__link {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  color: var(--white);
+}
+
+
+.footer__link::before {
+  position: absolute;
+  content: "";
+  left: -2px;
+  top: -2px;
+  width: calc(100% + 4px);
+  height: 20px;
+  z-index: -1;
+  opacity: 0;
+  background-color: var(--primary_light);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.footer__link:focus,
+.footer__link:focus-visible {
+  color: var(--white);
+  outline: none;
+}
+
+.footer__link:focus::before {
+  opacity: 1;
+}
+
+.footer__link:hover {
+  color: var(--primary);
+}
+
+.footer__link:active {
+  color: var(--primary_shade);
+}
+
+.footer__link:active::before {
+  opacity: 0;
+}
+
+
+.footer__border {
+  width: 100%;
+}
+
+.footer__copirait {
+  padding-top: 23px;
+  padding-bottom: 8px;
+  color: var(--shade_grey);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-image: url(../../img/footer_wawe.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+}

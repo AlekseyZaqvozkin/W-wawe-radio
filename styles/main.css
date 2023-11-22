@@ -1,0 +1,137 @@
+@import "normalaise.css";
+@import "fonts.css";
+@import "variables.css";
+
+@import "components/header.css";
+@import "components/hero.css";
+@import "components/podcasts.css";
+@import "components/broadcast.css";
+@import "components/guest.css";
+@import "components/playlist.css";
+@import "components/adv.css";
+@import "components/about.css";
+@import "components/footer.css";
+
+
+body {
+  min-width: 320px;
+  font-family: "Muller", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 0;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 96px 0;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+}
+
+.title_black {
+  color: var(--black);
+}
+
+.title_white {
+  color: var(--white);
+}
+
+.caption {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.link {
+  z-index: 1;
+  position: relative;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.link-effect::before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  top: -4px;
+  width: calc(100% + 20px);
+  height: 28px;
+  z-index: -1;
+  opacity: 0;
+  background-color: var(--primary_light);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.link-effect:focus,
+.link-effect:focus-visible {
+  color: var(--white);
+  border: none;
+  outline: none;
+}
+
+.link-effect:focus::before {
+  opacity: 1;
+}
+
+.link-effect:hover {
+  color: var(--primary);
+}
+
+.link-effect:active {
+  color: var(--primary_shade);
+}
+
+.link-effect:active::before {
+  opacity: 0;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.btn {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.btn-reset {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn_fill {
+  border: 2px solid transparent;
+  padding: 23px 52px;
+  border-radius: 40px;
+  background: var(--primary);
+  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn_fill:focus {
+  border: 2px solid var(--primary_shade);
+  background-color: var(--primary_light);
+}
+
+.btn_fill:hover {
+  background-color: var(--primary_light);
+}
+
+.btn_fill:active {
+  background-color: var(--primary_shade);
+  border: 2px solid var(--primary_shade);
+}
+
+.btn_no-fill {
+  width: 160px;
+  height: 40px;
+  border-radius: 77px;
+}

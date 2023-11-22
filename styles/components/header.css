@@ -1,0 +1,53 @@
+.header__wrap {
+	margin: 0 auto;
+	max-width: 1110px;
+}
+
+.header__container {
+	position: relative;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.header__content {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	margin-right: 80px;
+}
+
+.header__btn {
+	transition: stroke 0.2s ease-in-out;
+	margin-left: auto;
+	border: none;
+	stroke: var(--primary);
+}
+
+.header__btn:focus,
+.header__btn:hover {
+	stroke: var(--primary_light);
+	outline: none;
+}
+
+.header__btn:active {
+	stroke: var(--primary_shade);
+}
+
+.header-nav {
+	max-width: 637px;
+	width: 100%;
+	padding-top: 2px;
+}
+
+.header-nav__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-nav__link {
+	transition: color 0.2s ease-in-out;
+	font-size: 20px;
+	color: var(--black);
+}

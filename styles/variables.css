@@ -1,0 +1,19 @@
+:root {
+    /* color */
+    --white: #FFFFFF;
+    --black: #121723;
+    --text_gray: #292E39;
+    --shade_grey: #A1A6B4;
+    --grey: #D2D5DD;
+    --light_color: #E6E8EC;
+    --promo_color: #BB973E;
+    --promo_color_shade: #F0D288;
+    --blue: #0039A6;
+    --red: #D52B1E;
+    --primary_shade: #4F28A5;
+    --primary: #6D31EE;
+    --primary_light: #AA9DFA;
+    --light_color_40: #F5F6F7;
+
+    --gap: 30px;
+}

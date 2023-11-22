@@ -1,0 +1,27 @@
+.hero__container {
+  padding-top: 96px;
+  padding-bottom: 94px;
+  background-image: url(../../img/hero_mic.jpg);
+  background-position: right 43%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.hero__title {
+  margin-bottom: 14px;
+  font-size: 60px;
+  line-height: 100%;
+}
+
+.hero__desc {
+  max-width: 635px;
+  min-height: 87px;
+  margin-bottom: 29px;
+  line-height: 150%;
+  color: var(--black);
+}
+
+.hero__btn {
+  font-size: 20px;
+  color: var(--white);
+}
